@@ -50,7 +50,4 @@ function mapStateToProps(state) {
     user: state.user
   }
 }
-
-	
-// ADD addPurchase AND removePurchase TO THE 2ND OBJ ARG IN THE CONNECT METHOD
 export default connect(mapStateToProps, { requestUserData, requestBudgetData, addPurchase, removePurchase })(Budget);
